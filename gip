@@ -1,4 +1,4 @@
 #!/bin/sh
 
-curl inet-ip.info | pbcopy
+curl inet-ip.info -s | tr -d '\r\n' | pbcopy
 
